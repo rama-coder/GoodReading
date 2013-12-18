@@ -19,6 +19,9 @@ Initial checking of the directory/files
 5. git push origin master (Enter passphrase)
 
 ===========================================
-Procedure is same for further updates
+Subsequent modifications uploading
 ===========================================
 
+1. git add .
+2. git commit -m "Comment"
+3. git push origin master (Enter passphrase)
