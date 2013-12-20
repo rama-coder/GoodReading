@@ -185,4 +185,15 @@ b. git rebase (Merges from remote branch to local active branch in committed ord
 
 5. While a GitBash does git fetch followed by git merge, Git GUI does git fetch followed by git rebase.
 
+Note: By default, git push does not transfer tags to remote repositories. You have to explicitly push tags to share them.
+
 6. git tag -a ZMS_02.05.02.001 -m "First ADF release"
+7. git push github ZMS_02.05.02.001 will push the specified tag
+8. git push github --tag will push all tags to remote repository.
+
+Generic Syntax: git push github <BranchName or TagName or --tag>
+
+9. git checkout commit <HashCode> will checkout the specific version of a file.
+10. git checkout master will reload the latest version of the all files.
+
+11. git checkout ZMS_02.05.02.001 will set the config spec to retrieve from that tag.
