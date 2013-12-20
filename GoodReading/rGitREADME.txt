@@ -138,8 +138,51 @@ PART 3
 9. git merge master (will merge from master branch to zoi_1 branch)
 10. Enter ZZ to exit out of git log.
 
-###################################
+######################################################################
 Always PULL before doing PUSH
-###################################
+Git Bash conflicts resolving procedure is different from Git GUI client.
+######################################################################
 
 11. .gitignore file will contain the pattern of files that will be ignored by GIT.
+
+======================
+PART 4
+======================
+
+1. git commit -a -m "Comments"
+2. git pull github master
+3. git push github master
+
+######################################################################
+Always PULL before doing PUSH
+Git Bash conflicts resolving procedure is different from Git GUI client.
+######################################################################
+
+4. For resolving merge conflicts using GUI client, do the following.
+
+4.1. git add .
+4.2. git rebase --continue
+4.3. Open the file and resolve the conflicts manually and save
+4.4. commit and publish in GUI client
+
+5. For resolving merge conflicts in Git Bash client, do the following.
+
+4.1. git add .
+4.2. git push github master
+4.3. Open the file and resolve the conflicts manually and save
+4.4. git commit -a -m "Msg"
+
+4.5. git push github master
+4.6. git pull is a helper command that does following 2 commands automatically
+
+a. git fetch (Downloads the code)
+b. git merge (Merges from remote branch to local active branch without committed order)
+
+4.7. git pull --rebase is a helper command that does following 2 commands automatically
+
+a. git fetch (Downloads the code)
+b. git rebase (Merges from remote branch to local active branch in committed order)
+
+5. While a GitBash does git fetch followed by git merge, Git GUI does git fetch followed by git rebase.
+
+6. git tag -a ZMS_02.05.02.001 -m "First ADF release"
