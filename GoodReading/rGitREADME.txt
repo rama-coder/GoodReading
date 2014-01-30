@@ -197,3 +197,10 @@ Generic Syntax: git push github <BranchName or TagName or --tag>
 10. git checkout master will reload the latest version of the all files.
 
 11. git checkout ZMS_02.05.02.001 will set the config spec to retrieve from that tag.
+12. git reset will uncheckout the changes. git reset will only uncheckout the changes that are committed to local staging area. It wont uncheckout the changes that are pushed to remote repo.
+13. git revert will restore the file from before the most recent commit to remote repo. It wont remove history but will load the version that is before latest commit.
+
+14. If a very old version need to be checkedout, git revert should be done sequentially.
+15. There is a TortoiseGit available
+ 
+http://code.google.com/p/tortoisegit
