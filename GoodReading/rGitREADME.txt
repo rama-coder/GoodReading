@@ -14,7 +14,7 @@ PART 1
 7. Doing an ls again will print the contents of project home directory.
 8. From git-bash, run the following.
 
-git config --global user.name "krishh"
+git config --global user.name "rama777"
 
 9. From git-bash, run the following.
 
